@@ -2,15 +2,14 @@
   display: flex;
   flex-direction: column;
   margin-left: 3%;
-  margin-right: 2.5%;
+  margin-right: 2em;
 }
 
 .section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  row-gap: 20px;
-  
+  row-gap: 10px;
 }
 
 img {
@@ -117,11 +116,18 @@ li {
   height: 20px;
 }
 
+.container {
+    margin-left: 3%;
+    margin-right: 10%;
+}
+
 header {
   overflow: hidden;
 
   background: white;
   margin-top: 1.5rem;
+  
+
 }
 
 header a,
@@ -136,7 +142,7 @@ header label {
 
 header a:hover,
 header label:hover {
-  color: #df7b7b;
+  color: #8e7373;
 }
 
 header label {
@@ -154,8 +160,7 @@ header label:after {
   float: left;
   font-weight: bold;
   font-size: 1.5em;
-  font-family: "Arsenal", sans-serif;
-
+  font-family: "Quicksand", sans-serif;
   font-size: 26px;
 }
 
@@ -194,27 +199,28 @@ nav a {
 }
 
 @media only screen and (min-width: 700px) {
-  
-    header label { display: none; }
+  header label {
+    display: none;
+  }
 
-nav {
-  width: auto;
-  max-height: none;
-}
+  nav {
+    width: auto;
+    max-height: none;
+  }
 
-nav ul {
-  padding: 0;
-  padding-right: 10px;
-}
+  nav ul {
+    padding: 0;
+    padding-right: 10px;
+  }
 
-nav li {
-  display: inline-block;
-  text-align: left;
-}
+  nav li {
+    display: inline-block;
+    text-align: left;
+  }
 
-header nav a {
-  display: inline-block;
-  padding: 20px 10px;
-  width: auto;
-}
+  header nav a {
+    display: inline-block;
+    padding: 20px 10px;
+    width: auto;
+  }
 }
